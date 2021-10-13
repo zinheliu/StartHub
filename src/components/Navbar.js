@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import logo from '../assets/images/logo-dark.png';
 import './Navbar.css';
 function Navbar() {
@@ -45,24 +46,25 @@ function Navbar() {
             <div className="menu-nav-container">
               <ul className={menuClick ? "nav-menu active" : "nav-menu"}>
                 <li className="nav-menu-item active">
-                  <Link to="/" className="nav-menu-links" onClick={closeMenuClick}>
+                  <AnchorLink href="/" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
                     HOME
-                  </Link>
+                  </AnchorLink>
                 </li>
                 <li className="nav-menu-item">
-                  <Link to="/" className="nav-menu-links"  onClick={closeMenuClick}>
+                  <AnchorLink href="#services" offset='120' className="nav-menu-links"  onClick={closeMenuClick}>
                     SERVICES
-                  </Link>
+                  </AnchorLink>
                 </li>
                 <li className="nav-menu-item">
-                  <Link to="/" className="nav-menu-links" onClick={closeMenuClick}>
+                  <AnchorLink href="#news" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
                     NEWS
-                  </Link>
+                  </AnchorLink>
+                  
                 </li>
                 <li className="nav-menu-item">
-                  <Link to="/" className="nav-menu-links" onClick={closeMenuClick}>
+                  <AnchorLink href="#contacts" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
                     CONTACTS
-                  </Link>
+                  </AnchorLink>
                 </li>
               </ul>
             </div>

@@ -7,7 +7,7 @@ import news_item_img_4 from '../assets/images/news-item-4.png';
 function RecentNewsBlock(){
   return(
     <>
-      <section className="recent-news">
+      <section className="recent-news" id="news">
         <div className="title">
           <h2>Recent News</h2>
         </div>

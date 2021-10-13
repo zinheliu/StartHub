@@ -9,7 +9,7 @@ function Footer(){
 
   return(
     <>
-      <footer className="footer">
+      <footer className="footer" id="contacts">
         <div className="container">
           <div className="address">
             <div className="logo">

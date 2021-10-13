@@ -3,7 +3,7 @@ import './ServicesBlock.css';
 function ServicesBlock(){
   return (
     <>
-      <section className="services">
+      <section className="services" id="services">
         <div className="services-block">
           <div className="services-title">
             <h1>Set up your business today</h1>
