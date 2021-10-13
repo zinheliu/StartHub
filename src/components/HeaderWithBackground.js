@@ -1,0 +1,21 @@
+import React from 'react';
+import './HeaderWithBackground.css';
+import header_bg_img from '../assets/images/header-bg.png';
+function HeaderWithBackground(){
+  return(
+    <>
+			<header className="header">
+				<div className="image-container">
+					<img src={header_bg_img} className="background-image" alt="Landing_Image"/>
+				</div>
+				<div className="title">
+					<h1>Starting Company</h1>
+					<br />
+					<h1>is easy</h1>
+				</div>					
+   		</header>
+    </>
+  )
+}
+
+export default HeaderWithBackground;

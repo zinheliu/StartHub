@@ -1,0 +1,149 @@
+:root{
+  --light-red: #F05454;
+  --navy-blue: #30475E;
+  --dark-blue: #2F465D;
+  --light-black: #222831;
+  --light-gray: #C6C4C4;
+}
+
+.footer {
+  background: var(--navy-blue);
+  position: relative;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+.footer .container { 
+  width: 80%;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 60px;
+}
+
+.footer .container .address{
+  width: 30%;
+}
+
+
+
+.footer .container .address .location {
+  display: inline-flex;
+}
+
+.footer .container .address .location .icon{
+  color: var(--light-red);
+  font-size: 14px;
+}
+
+.footer .container .address .location p{
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+  max-width: 50%;
+}
+
+.footer .container .address .phonenumber {
+  display: inline-flex;
+}
+
+.footer .container .address .phonenumber .icon{
+  color: var(--light-red);
+  font-size: 12px;
+}
+
+.footer .container .address .phonenumber p{
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+  max-width: 50%;
+}
+
+.footer .container .contactus{
+  width: 60%;
+}
+
+.footer .container .contactus>h2{
+  color: white;
+}
+
+.footer .container .contactus form {
+  margin-top: 30px;
+}
+
+.footer .container .contactus .user-info{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.footer .container .contactus .user-info input {
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.footer .container .contactus .message {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.footer .container .contactus .message textarea {
+  height: 120px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.footer .container .contactus .btn{
+  height: 60px;
+  background: var(--light-red);
+  color: white;
+  width: 25%;
+  border: 1px solid var(--light-red)\);
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+
+.footer .title {
+  text-align: center;
+  color: var(--light-gray);
+}
+
+@media screen and (max-width: 960px){
+  .footer .container {
+    display: block;
+  }
+
+  .footer .container .address{
+    width: 100%;
+  }
+
+  .footer .container .contactus{
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .footer .container .address .fas{
+    color: var(--light-red);
+  }
+
+  .footer .container .contactus .user-info{
+    width: 100%;
+  }
+
+  .footer .container .contactus .message {
+    width: 100%;
+  }
+
+  .footer .container .contactus .btn{
+    width: 100%;
+  }
+}
