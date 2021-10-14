@@ -4,7 +4,7 @@ import './Footer.css';
 import logo from '../assets/images/logo-light.png';
 function Footer(){
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
 
   return(

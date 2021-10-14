@@ -1,0 +1,168 @@
+#register{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: var(--navy-blue);
+  padding: 60px 120px;
+  margin-top: 80px;
+}
+
+#register .title{
+  color: white;
+  font-size: 2rem;
+}
+
+#register form{
+  margin-top: 60px;
+}
+
+#register form .row{
+  display:flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#register form .row input{
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+#register form .row .business{
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#register form .row .date-picker{
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#register form .row .date-picker input{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#register form .row select {
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+#register form .row.upload{
+  display: block;
+  
+}
+
+#register form .row.upload #file_uploader{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 40px;
+  background: var(--light-black);
+  border: 1px solid var(--light-black);
+  border-radius: 50px;
+}
+
+#register form .row.upload #file_uploader #val{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#register form .row.upload #file_uploader #button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  color: var(--light-gray);
+}
+
+#register form .row.upload #file_uploader input{
+  opacity: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#register form .btn.submit{
+  background: var(--light-red);
+  width: 50%;
+  height: 60px;
+  margin-top: 40px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid var(--light-red);
+  font-size: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  #register {
+    padding: 60px 20px;
+  }
+
+  #register form .row{
+    flex-direction: column;
+  }
+
+  #register form .row:nth-child(2){
+    margin-top:0;
+  }
+
+  #register form .row input{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  #register form .row .business {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #register form .row .date-picker{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #register form .row.upload #file_uploader{
+    width: 100%;
+  }
+
+  #register form .row.upload #file_uploader input{
+    width: 100%;
+    height: 60px;
+  }
+
+  #register form .row.upload #file_uploader #button .fas{
+    color: var(--light-gray);
+  }
+
+  #register form .btn.submit{
+    background: var(--light-red);
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid var(--light-red);
+    height: 60px;
+  }
+}
