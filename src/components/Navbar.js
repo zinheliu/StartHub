@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import logo from '../assets/images/logo-dark.png';
 import './Navbar.css';
-function Navbar() {
+function Navbar(props) {
   const [menuClick, setMenuClick] = useState(false);
   const [langClick, setLangClick] = useState(false);
   
@@ -27,8 +27,12 @@ function Navbar() {
     setLangClick(false);
     setMenuClick(false);
   };
+
+  const location = useLocation();
+  
   
   return (
+    
     <>
       <nav className="navbar">
         <div className="navbar-container">
@@ -43,7 +47,7 @@ function Navbar() {
               <i className={menuClick ? "fas fa-times" : "fas fa-bars"} />
             </div>
           </div>
-          <div className="menu-container light-theme">
+          <div className={location.pathname === "/" ? "menu-container light-theme" : "menu-container dark-theme"}>
             <div className="menu-nav-container">
               <ul className={menuClick ? "nav-menu active" : "nav-menu"}>
                 <li className="nav-menu-item active">

@@ -51,7 +51,7 @@ function RegisterForm(props) {
               <div id="file_uploader">
                 <input type="file" ref={register} name="document" title=" "/>
                 <span id='val'></span>
-                <span id='button'><i class="fas fa-cloud-upload-alt"></i> Drop Your Documents Here</span>
+                <span id='button'><i className="fas fa-cloud-upload-alt"></i> Drop Your Documents Here</span>
               </div>
             </div>
             <input className="btn submit" type="submit" value="APPLY NOW" />

@@ -4,7 +4,7 @@ function Header(props) {
   
   return (
     <>
-      <header class="header small">
+      <header className="header small">
         <h1>{props.title}</h1>
       </header>
     </>

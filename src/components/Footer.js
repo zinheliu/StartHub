@@ -47,7 +47,7 @@ function Footer(){
             </div>
           </div>
         </div>
-        <div class="title">
+        <div className="title">
           <h4>StartHub Agency © 2023 by ISAP Solutions</h4>
         </div>
       </footer>
