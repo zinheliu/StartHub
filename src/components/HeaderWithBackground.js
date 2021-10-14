@@ -4,7 +4,7 @@ import header_bg_img from '../assets/images/header-bg.png';
 function HeaderWithBackground(){
   return(
     <>
-			<header className="header wide">
+			<header id="#home" className="header wide">
 				<div className="image-container">
 					<img src={header_bg_img} className="background-image" alt="Landing_Image"/>
 				</div>

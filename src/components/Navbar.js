@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { NavHashLink, HashLink } from 'react-router-hash-link';
 import logo from '../assets/images/logo-dark.png';
 import './Navbar.css';
 function Navbar() {
@@ -46,25 +47,25 @@ function Navbar() {
             <div className="menu-nav-container">
               <ul className={menuClick ? "nav-menu active" : "nav-menu"}>
                 <li className="nav-menu-item active">
-                  <AnchorLink href="/" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
+                  <HashLink to="/#home" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
                     HOME
-                  </AnchorLink>
+                  </HashLink>
                 </li>
                 <li className="nav-menu-item">
-                  <AnchorLink href="#services" offset='120' className="nav-menu-links"  onClick={closeMenuClick}>
+                  <HashLink to="/#services" offset='120' className="nav-menu-links"  onClick={closeMenuClick}>
                     SERVICES
-                  </AnchorLink>
+                  </HashLink>
                 </li>
                 <li className="nav-menu-item">
-                  <AnchorLink href="#news" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
+                  <HashLink to="#news" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
                     NEWS
-                  </AnchorLink>
+                  </HashLink>
                   
                 </li>
                 <li className="nav-menu-item">
-                  <AnchorLink href="#contacts" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
+                  <HashLink to="#contacts" offset='120' className="nav-menu-links" onClick={closeMenuClick}>
                     CONTACTS
-                  </AnchorLink>
+                  </HashLink>
                 </li>
               </ul>
             </div>

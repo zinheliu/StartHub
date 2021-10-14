@@ -24,7 +24,7 @@ function ServicesBlock(){
                 </Link>
               </div>
               <div className="services-grid-cell">
-                <Link to="/patenting-register">
+                <Link offset="0" to="/patenting-register">
                   <h2 className="grid-cell-index">02</h2>
                   <div className="grid-cell-container">
                     <span className="more-details-link">more <i className="fas fa-long-arrow-alt-right"></i></span>
@@ -46,7 +46,7 @@ function ServicesBlock(){
                 </Link>
               </div>
               <div className="services-grid-cell">
-                <Link to="stream-register">
+                <Link to="/stream-register">
                   <h2 className="grid-cell-index">04</h2>
                   <div className="grid-cell-container">
                     <span className="more-details-link">more <i className="fas fa-long-arrow-alt-right"></i></span>
@@ -57,7 +57,7 @@ function ServicesBlock(){
                 </Link>
               </div>
               <div className="services-grid-cell">
-                <Link to="residency-register">
+                <Link to="/residency-register">
                   <h2 className="grid-cell-index">05</h2>
                   <div className="grid-cell-container">
                     <span className="more-details-link">more <i className="fas fa-long-arrow-alt-right"></i></span>
@@ -68,7 +68,7 @@ function ServicesBlock(){
                 </Link>
               </div>
               <div className="services-grid-cell">
-                <Link to="funding-register">
+                <Link to="/funding-register">
                   <h2 className="grid-cell-index">06</h2>
                   <div className="grid-cell-container">
                     <span className="more-details-link">more <i className="fas fa-long-arrow-alt-right"></i></span>
