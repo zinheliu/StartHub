@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { NavHashLink, HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/images/logo-dark.png';
 import './Navbar.css';
 function Navbar(props) {
