@@ -18,11 +18,13 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
+    
+    
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
